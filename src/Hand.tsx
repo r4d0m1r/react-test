@@ -15,9 +15,9 @@ export const Hand: FunctionComponent<HandProps> = ({
 }) => {
   return (
     <line
-      {...(stationary && { y1: length - limit })}
-      y2={-(stationary ? limit : length)}
       className={`stroke-cap-round ${className}`}
+      y1={stationary ? length - limit : undefined}
+      y2={-(stationary ? limit : length)}
       {...rest}
     />
   );
