@@ -1,7 +1,6 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@preact/signals-react': ^1.0.2
   '@types/react': 18.0.19
   '@types/react-dom': 18.0.6
   '@typescript-eslint/eslint-plugin': 5.36.2
@@ -24,7 +23,6 @@ specifiers:
   vite-tsconfig-paths: 3.5.0
 
 dependencies:
-  '@preact/signals-react': 1.0.2_react@18.2.0
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
 
@@ -488,19 +486,6 @@ packages:
   /@polka/url/1.0.0-next.21:
     resolution: {integrity: sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==}
     dev: true
-
-  /@preact/signals-core/1.1.1:
-    resolution: {integrity: sha512-otWUXVDAX2qWMBqBELvYBcEehBnta9zWhFZ+PZ3siL6LCu4Rk0u7q1bUgfTKPJjAbMYyPcIMoX/j34kDqcNlLg==}
-    dev: false
-
-  /@preact/signals-react/1.0.2_react@18.2.0:
-    resolution: {integrity: sha512-Wh2QazkNnmXn5RTFtOMDHsvG8UaWCfLVcEISNnAH+cRt395EstJE47d4gDaKWeMcrBD9E68CbN+0MKmZ+0S61w==}
-    peerDependencies:
-      react: 17.x || 18.x
-    dependencies:
-      '@preact/signals-core': 1.1.1
-      react: 18.2.0
-    dev: false
 
   /@rollup/pluginutils/4.2.1:
     resolution: {integrity: sha512-iKnFXr7NkdZAIHiIWE+BX5ULi/ucVFYWD6TbAV+rZctiRTY2PL6tsIKhoIOaoskiWAkgu+VsbXgUVDNLHf+InQ==}
