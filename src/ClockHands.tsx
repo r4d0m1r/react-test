@@ -5,7 +5,7 @@ import type { FunctionComponent } from 'react';
 const getSecondsSinceMidnight = (): number =>
   (Date.now() - new Date().setHours(0, 0, 0, 0)) / 1000;
 
-const rotate = (rotate: number, fractionDigits = 1) =>
+export const rotate = (rotate: number, fractionDigits = 1) =>
   `rotate(${(rotate * 360).toFixed(fractionDigits)})`;
 
 export const ClockHands: FunctionComponent = () => {

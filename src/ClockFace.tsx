@@ -1,4 +1,4 @@
-import { ClockHands } from 'ClockHands';
+import { ClockHands, rotate } from 'ClockHands';
 import { Hand } from 'Hand';
 import type { FunctionComponent } from 'react';
 
@@ -15,7 +15,7 @@ export const ClockFace: FunctionComponent = () => (
         })).map(({ isHour }, index, { length }) => (
           <Hand
             key={index}
-            transform={`rotate(${(360 * index) / length})`}
+            transform={rotate(index / length, 0)}
             className={
               isHour
                 ? 'stroke-neutral-800 @dark:stroke-neutral-200 stroke-width-2'
