@@ -4,10 +4,10 @@ import { createRoot } from 'react-dom/client';
 import { ClockFace } from 'ClockFace';
 
 const root = document.querySelector('#root');
-if (root) {
+if (root)
   createRoot(root).render(
     <StrictMode>
       <ClockFace />
     </StrictMode>
   );
-} else throw new Error('#root element not found!');
+else throw new Error('#root element not found!');
