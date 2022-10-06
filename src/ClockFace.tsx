@@ -1,19 +1,18 @@
 import { useComputed, useSignal, useSignalEffect } from '@preact/signals-react';
 import { ClockHand } from 'ClockHand';
-import type { FunctionComponent } from 'react';
 
-const getSecondsSinceMidnight = (): number =>
-  (Date.now() - new Date().setHours(0, 0, 0, 0)) / 1000;
-
-const rotate = (rotate: number, fractionDigits = 1) =>
-  `rotate(${(rotate * 360).toFixed(fractionDigits)})`;
-
-export const ClockFace: FunctionComponent = () => {
+export const ClockFace = () => {
+  const getSecondsSinceMidnight = (): number =>
+    (Date.now() - new Date().setHours(0, 0, 0, 0)) / 1000;
   const time = useSignal(getSecondsSinceMidnight());
+
+  const rotate = (rotate: number, fractionDigits = 1) =>
+    `rotate(${(rotate * 360).toFixed(fractionDigits)})`;
   const miliseconds = useComputed(() => rotate(time.value % 1, 0));
   const seconds = useComputed(() => rotate((time.value % 60) / 60));
   const minutes = useComputed(() => rotate(((time.value / 60) % 60) / 60));
   const hours = useComputed(() => rotate(((time.value / 60 / 60) % 12) / 12));
+
   useSignalEffect(() => {
     let frame = requestAnimationFrame(function loop() {
       time.value = getSecondsSinceMidnight();
@@ -21,6 +20,7 @@ export const ClockFace: FunctionComponent = () => {
     });
     return () => cancelAnimationFrame(frame);
   });
+
   return (
     <div className="flex items-center justify-center h-full @dark:bg-neutral-700">
       <svg viewBox="0 0 200 200" className="h-95vmin">
