@@ -20,7 +20,7 @@ specifiers:
   react-dom: 18.2.0
   typescript: 4.8.4
   unocss: 0.45.26
-  vite: 3.1.4
+  vite: 3.1.5
   vite-tsconfig-paths: 3.5.1
 
 dependencies:
@@ -33,7 +33,7 @@ devDependencies:
   '@types/react-dom': 18.0.6
   '@typescript-eslint/eslint-plugin': 5.39.0_xyciw6oqjoiiono4dhv3uhn5my
   '@typescript-eslint/parser': 5.39.0_ypn2ylkkyfa5i233caldtndbqa
-  '@vitejs/plugin-react': 2.1.0_vite@3.1.4
+  '@vitejs/plugin-react': 2.1.0_vite@3.1.5
   eslint: 8.24.0
   eslint-config-prettier: 8.5.0_eslint@8.24.0
   eslint-import-resolver-typescript: 3.5.1_dg2pe6kqkrddxbf2funb723kue
@@ -44,9 +44,9 @@ devDependencies:
   eslint-plugin-react-hooks: 4.6.0_eslint@8.24.0
   prettier: 2.7.1
   typescript: 4.8.4
-  unocss: 0.45.26_vite@3.1.4
-  vite: 3.1.4
-  vite-tsconfig-paths: 3.5.1_vite@3.1.4
+  unocss: 0.45.26_vite@3.1.5
+  vite: 3.1.5
+  vite-tsconfig-paths: 3.5.1_vite@3.1.5
 
 packages:
 
@@ -675,12 +675,12 @@ packages:
       eslint-visitor-keys: 3.3.0
     dev: true
 
-  /@unocss/astro/0.45.26_vite@3.1.4:
+  /@unocss/astro/0.45.26_vite@3.1.5:
     resolution: {integrity: sha512-jAdbYNwjyzh05B4B7lhuHYmkNfmIZsQGhRNXogOx0t1BMzRZg9jID5xsJiujaElQL6ll53pbuRRyGV80o75n0Q==}
     dependencies:
       '@unocss/core': 0.45.26
       '@unocss/reset': 0.45.26
-      '@unocss/vite': 0.45.26_vite@3.1.4
+      '@unocss/vite': 0.45.26_vite@3.1.5
     transitivePeerDependencies:
       - vite
     dev: true
@@ -813,7 +813,7 @@ packages:
       '@unocss/core': 0.45.26
     dev: true
 
-  /@unocss/vite/0.45.26_vite@3.1.4:
+  /@unocss/vite/0.45.26_vite@3.1.5:
     resolution: {integrity: sha512-9BNJXBN0UG+olMbfIcVcrJgBetyO3HOP6Wx3r5Oc8iwfYSxrWQlHFF+yVJi/+oxsENfsjAgCRH7O+nF4FrXceA==}
     peerDependencies:
       vite: ^2.9.0 || ^3.0.0-0
@@ -826,10 +826,10 @@ packages:
       '@unocss/scope': 0.45.26
       '@unocss/transformer-directives': 0.45.26
       magic-string: 0.26.5
-      vite: 3.1.4
+      vite: 3.1.5
     dev: true
 
-  /@vitejs/plugin-react/2.1.0_vite@3.1.4:
+  /@vitejs/plugin-react/2.1.0_vite@3.1.5:
     resolution: {integrity: sha512-am6rPyyU3LzUYne3Gd9oj9c4Rzbq5hQnuGXSMT6Gujq45Il/+bunwq3lrB7wghLkiF45ygMwft37vgJ/NE8IAA==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
@@ -842,7 +842,7 @@ packages:
       '@babel/plugin-transform-react-jsx-source': 7.18.6_@babel+core@7.18.13
       magic-string: 0.26.3
       react-refresh: 0.14.0
-      vite: 3.1.4
+      vite: 3.1.5
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -3009,7 +3009,7 @@ packages:
     engines: {node: '>=12.18'}
     dev: true
 
-  /unocss/0.45.26_vite@3.1.4:
+  /unocss/0.45.26_vite@3.1.5:
     resolution: {integrity: sha512-d8mDD6YewHfSCA2uGbBzKY/UnQRSrIDgP7gI61Ll6XY+DcLCVMn0vc1BubQGEL2K0wP9wDsI8HDR6VzDI/0w9w==}
     engines: {node: '>=14'}
     peerDependencies:
@@ -3018,7 +3018,7 @@ packages:
       '@unocss/webpack':
         optional: true
     dependencies:
-      '@unocss/astro': 0.45.26_vite@3.1.4
+      '@unocss/astro': 0.45.26_vite@3.1.5
       '@unocss/cli': 0.45.26
       '@unocss/core': 0.45.26
       '@unocss/preset-attributify': 0.45.26
@@ -3034,7 +3034,7 @@ packages:
       '@unocss/transformer-compile-class': 0.45.26
       '@unocss/transformer-directives': 0.45.26
       '@unocss/transformer-variant-group': 0.45.26
-      '@unocss/vite': 0.45.26_vite@3.1.4
+      '@unocss/vite': 0.45.26_vite@3.1.5
     transitivePeerDependencies:
       - supports-color
       - vite
@@ -3057,7 +3057,7 @@ packages:
       punycode: 2.1.1
     dev: true
 
-  /vite-tsconfig-paths/3.5.1_vite@3.1.4:
+  /vite-tsconfig-paths/3.5.1_vite@3.1.5:
     resolution: {integrity: sha512-t7cPvDMDxOCUxxNLqngXiX+L6jPYBr+eMgkeVadknxBb89d2s1aejz+wFEep010VfXjGVAUWGEFPe1fkRYTFvg==}
     peerDependencies:
       vite: '>2.0.0-0'
@@ -3066,13 +3066,13 @@ packages:
       globrex: 0.1.2
       recrawl-sync: 2.2.2
       tsconfig-paths: 4.1.0
-      vite: 3.1.4
+      vite: 3.1.5
     transitivePeerDependencies:
       - supports-color
     dev: true
 
-  /vite/3.1.4:
-    resolution: {integrity: sha512-JoQI08aBjY9lycL7jcEq4p9o1xUjq5aRvdH4KWaXtkSx7e7RpAh9D3IjzDWRD4Fg44LS3oDAIOG/Kq1L+82psA==}
+  /vite/3.1.5:
+    resolution: {integrity: sha512-V4Avke0b7h2zTWVJf8vq6TE3aH061NQ3b1ixHQyqdoE/5HIVsxVLCyTLjJtHVcsJ5fIKSHvOtflWpgavHS8RPw==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
     peerDependencies:
