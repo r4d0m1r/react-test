@@ -50,7 +50,7 @@ export const ClockFace = () => {
         <g className="translate-100px">
           <ClockHand
             transform={miliseconds}
-            className="stroke-neutral-200 @dark:stroke-neutral-600 stroke-width-5 will-change-transform"
+            className="stroke-neutral-200 @dark:stroke-neutral-600 stroke-width-5"
             length={83}
           />
           <ClockHand

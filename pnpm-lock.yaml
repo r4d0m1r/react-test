@@ -1,7 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
-  '@preact/signals-react': 1.2.0
+  '@preact/signals-react': 1.2.1
   '@types/react': 18.0.21
   '@types/react-dom': 18.0.6
   '@typescript-eslint/eslint-plugin': 5.40.0
@@ -24,7 +24,7 @@ specifiers:
   vite-tsconfig-paths: 3.5.1
 
 dependencies:
-  '@preact/signals-react': 1.2.0_react@18.2.0
+  '@preact/signals-react': 1.2.1_react@18.2.0
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
 
@@ -498,8 +498,8 @@ packages:
     resolution: {integrity: sha512-z3/bCj7rRA21RJb4FeJ4guCrD1CQbaURHkCTunUWQpxUMAFOPXCD8tSFqERyGrrcSb4T3Hrmdc1OAl0LXBHwiw==}
     dev: false
 
-  /@preact/signals-react/1.2.0_react@18.2.0:
-    resolution: {integrity: sha512-5SYz9lTkzoMoZdQf9+nLIfL0IZ28BKbH3hd0DgLIsVH9gJdhe6PI37QaEBlVkmMQQoTMmXoQSW/5oeO/qZv/ew==}
+  /@preact/signals-react/1.2.1_react@18.2.0:
+    resolution: {integrity: sha512-73J8sL1Eru7Ot4yBYOCPj1izEZjzCEXlembRgk6C7PkwsqoAVbCxMlDOFfCLoPFuJ6qeGatrJzRkcycXppMqVQ==}
     peerDependencies:
       react: 17.x || 18.x
     dependencies:
