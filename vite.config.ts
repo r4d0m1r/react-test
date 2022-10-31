@@ -5,11 +5,7 @@ import tsconfigPaths from 'vite-tsconfig-paths';
 
 export default defineConfig({
   base: '/react-clock/',
+  build: { commonjsOptions: { include: [] } },
+  optimizeDeps: { disabled: false },
   plugins: [react(), uno(), tsconfigPaths()],
-  optimizeDeps: {
-    disabled: false,
-  },
-  build: {
-    commonjsOptions: { include: [] },
-  },
 });

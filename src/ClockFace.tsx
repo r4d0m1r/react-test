@@ -24,7 +24,7 @@ export const ClockFace = () => {
   });
 
   return (
-    <div className="flex items-center justify-center h-full @dark:bg-neutral-700">
+    <div className="flex items-center justify-center h-screen @dark:bg-neutral-700">
       <svg viewBox="0 0 200 200" className="h-95vmin">
         <g className="translate-100px">
           <circle

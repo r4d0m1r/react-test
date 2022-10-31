@@ -6,7 +6,6 @@
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": false,
     "jsx": "react-jsx",
-    "types": ["vite/client"],
     "noEmit": true,
     "isolatedModules": true,
     "baseUrl": "src",
