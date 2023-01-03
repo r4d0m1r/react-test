@@ -1,6 +1,6 @@
 {
   "root": true,
-  "ignorePatterns": ["dist", "!**/.*"],
+  "ignorePatterns": ["dist", "node_modules", "!**/.*", "pnpm-lock.yaml"],
   "overrides": [
     {
       "files": ["*.{ts,tsx}"],
@@ -40,10 +40,27 @@
     },
     {
       "files": ["*.json"],
+      "excludedFiles": ["{.eslintrc,tsconfig*}.json"],
       "extends": [
-        "eslint:recommended",
         "plugin:jsonc/recommended-with-json",
         "plugin:jsonc/prettier",
+        "plugin:prettier/recommended"
+      ]
+    },
+    {
+      // jsonc
+      "files": ["{.eslintrc,tsconfig*}.json"],
+      "extends": [
+        "plugin:jsonc/recommended-with-jsonc",
+        "plugin:jsonc/prettier",
+        "plugin:prettier/recommended"
+      ]
+    },
+    {
+      "files": ["*.{yml,yaml}"],
+      "extends": [
+        "plugin:yml/standard",
+        "plugin:yml/prettier",
         "plugin:prettier/recommended"
       ]
     }

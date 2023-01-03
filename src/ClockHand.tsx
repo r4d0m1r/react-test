@@ -1,28 +1,23 @@
-import type { SVGProps } from 'react';
+import { memo, type SVGProps } from 'react';
 
-type SignalLike<T> = {
-  value: T;
-};
-
-type ClockHandProps = {
+interface ClockHandProps extends SVGProps<SVGLineElement> {
   length: number;
   limit?: number;
   stationary?: boolean;
-  transform: SignalLike<string>;
-} & Omit<SVGProps<SVGLineElement>, 'transform'>;
+}
 
-export const ClockHand = ({
+const Hand = ({
   length = 0,
   limit = 94,
   stationary,
-  transform: { value },
   ...rest
 }: ClockHandProps) => (
   <line
     y1={stationary ? length - limit : undefined}
     y2={-(stationary ? limit : length)}
     strokeLinecap="round"
-    transform={value}
     {...rest}
   />
 );
+
+export const ClockHand = memo(Hand);

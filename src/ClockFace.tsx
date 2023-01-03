@@ -1,27 +1,28 @@
-import { useComputed, useSignal, useSignalEffect } from '@preact/signals-react';
+import { useEffect, useMemo, useState } from 'react';
 import { ClockHand } from 'ClockHand';
 
 const length = 60;
+const getSecondsSinceMidnight = (): number =>
+  (Date.now() - new Date().setHours(0, 0, 0, 0)) / 1000;
+
+const rotate = (rotate: number, fractionDigits = 1) =>
+  `rotate(${(rotate * 360).toFixed(fractionDigits)})`;
 
 export const ClockFace = () => {
-  const getSecondsSinceMidnight = (): number =>
-    (Date.now() - new Date().setHours(0, 0, 0, 0)) / 1000;
-  const time = useSignal(getSecondsSinceMidnight());
+  const [time, setTime] = useState(getSecondsSinceMidnight());
 
-  const rotate = (rotate: number, fractionDigits = 1) =>
-    `rotate(${(rotate * 360).toFixed(fractionDigits)})`;
-  const miliseconds = useComputed(() => rotate(time.value % 1, 0));
-  const seconds = useComputed(() => rotate((time.value % 60) / 60));
-  const minutes = useComputed(() => rotate(((time.value / 60) % 60) / 60));
-  const hours = useComputed(() => rotate(((time.value / 60 / 60) % 12) / 12));
+  const miliseconds = useMemo(() => rotate(time % 1, 0), [time]);
+  const seconds = useMemo(() => rotate((time % 60) / 60), [time]);
+  const minutes = useMemo(() => rotate(((time / 60) % 60) / 60), [time]);
+  const hours = useMemo(() => rotate(((time / 60 / 60) % 12) / 12), [time]);
 
-  useSignalEffect(() => {
+  useEffect(() => {
     let frame = requestAnimationFrame(function loop() {
-      time.value = getSecondsSinceMidnight();
+      setTime(getSecondsSinceMidnight());
       frame = requestAnimationFrame(loop);
     });
     return () => cancelAnimationFrame(frame);
-  });
+  }, []);
 
   return (
     <div className="flex items-center justify-center h-screen @dark:bg-neutral-700">
@@ -36,7 +37,7 @@ export const ClockFace = () => {
           })).map(({ isHour }, index) => (
             <ClockHand
               key={index}
-              transform={{ value: rotate(index / length, 0) }}
+              transform={rotate(index / length, 0)}
               className={
                 isHour
                   ? 'stroke-neutral-800 @dark:stroke-neutral-200 stroke-width-2'
