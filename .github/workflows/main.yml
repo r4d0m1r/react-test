@@ -13,9 +13,6 @@ env:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [18]
 
     steps:
       - name: Checkout 🛎️
@@ -24,10 +21,10 @@ jobs:
       - name: Pnpm 🧱
         uses: pnpm/action-setup@v2.2.4
 
-      - name: Node.js ${{ matrix.node-version }} ⚓
+      - name: Node.js ⚓
         uses: actions/setup-node@v3.5.1
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: latest
           cache: pnpm
 
       - name: Install 🔧
