@@ -28,9 +28,9 @@
     "eslint-plugin-react": "7.31.11",
     "eslint-plugin-react-hooks": "4.6.0",
     "eslint-plugin-yml": "^1.4.0",
-    "prettier": "2.8.1",
+    "prettier": "2.8.2",
     "typescript": "4.9.4",
-    "unocss": "0.48.0",
+    "unocss": "0.48.3",
     "vite": "4.0.4",
     "vite-tsconfig-paths": "4.0.3"
   },
@@ -38,5 +38,5 @@
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
-  "packageManager": "pnpm@7.22.0"
+  "packageManager": "pnpm@7.23.0"
 }
