@@ -8,7 +8,7 @@ specifiers:
   '@typescript-eslint/parser': 5.62.0
   '@vitejs/plugin-react-swc': ^3.0.1
   eslint: 8.57.1
-  eslint-config-prettier: 8.10.0
+  eslint-config-prettier: 10.0.1
   eslint-import-resolver-typescript: 3.7.0
   eslint-plugin-import: 2.31.0
   eslint-plugin-jsonc: ^2.5.0
@@ -37,12 +37,12 @@ devDependencies:
   '@typescript-eslint/parser': 5.62.0_avq3eyf5kaj6ssrwo7fvkrwnji
   '@vitejs/plugin-react-swc': 3.0.1_vite@4.5.6
   eslint: 8.57.1
-  eslint-config-prettier: 8.10.0_eslint@8.57.1
+  eslint-config-prettier: 10.0.1_eslint@8.57.1
   eslint-import-resolver-typescript: 3.7.0_yao3fyb5xpoxzololp2ktdwawu
   eslint-plugin-import: 2.31.0_j7h5mq4o4ba7odl72fo2qovbxu
   eslint-plugin-jsonc: 2.5.0_eslint@8.57.1
   eslint-plugin-jsx-a11y: 6.10.2_eslint@8.57.1
-  eslint-plugin-prettier: 4.2.1_l5k3x6vt4o46v5v3huajal7yxq
+  eslint-plugin-prettier: 4.2.1_oyapqo775x24g45xzi7rcs7fc4
   eslint-plugin-react: 7.37.4_eslint@8.57.1
   eslint-plugin-react-hooks: 4.6.2_eslint@8.57.1
   eslint-plugin-yml: 1.4.0_eslint@8.57.1
@@ -2053,8 +2053,8 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /eslint-config-prettier/8.10.0_eslint@8.57.1:
-    resolution: {integrity: sha512-SM8AMJdeQqRYT9O9zguiruQZaN7+z+E4eAP9oiLNGKMtomwaB1E9dcgUD6ZAn/eQAb52USbvezbiljfZUhbJcg==}
+  /eslint-config-prettier/10.0.1_eslint@8.57.1:
+    resolution: {integrity: sha512-lZBts941cyJyeaooiKxAtzoPHTN+GbQTJFAIdQbRhA4/8whaAraEh47Whw/ZFfrjNSnlAxqfm9i0XVAEkULjCw==}
     hasBin: true
     peerDependencies:
       eslint: '>=7.0.0'
@@ -2202,7 +2202,7 @@ packages:
       string.prototype.includes: 2.0.1
     dev: true
 
-  /eslint-plugin-prettier/4.2.1_l5k3x6vt4o46v5v3huajal7yxq:
+  /eslint-plugin-prettier/4.2.1_oyapqo775x24g45xzi7rcs7fc4:
     resolution: {integrity: sha512-f/0rXLXUt0oFYs8ra4w49wYZBG5GKZpAYsJSm6rnYL5uVDjd+zowwMwVZHnAjf4edNrKpCDYfXDgmRE/Ak7QyQ==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
@@ -2214,7 +2214,7 @@ packages:
         optional: true
     dependencies:
       eslint: 8.57.1
-      eslint-config-prettier: 8.10.0_eslint@8.57.1
+      eslint-config-prettier: 10.0.1_eslint@8.57.1
       prettier: 2.8.8
       prettier-linter-helpers: 1.0.0
     dev: true
