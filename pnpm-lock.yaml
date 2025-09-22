@@ -30,7 +30,7 @@ dependencies:
   react-dom: 18.3.1_react@18.3.1
 
 devDependencies:
-  '@types/node': 18.19.123
+  '@types/node': 18.19.127
   '@types/react': 18.3.24
   '@types/react-dom': 18.3.7_@types+react@18.3.24
   '@typescript-eslint/eslint-plugin': 5.62.0_xjofbppfavgzddet3eqaopcxxe
@@ -49,7 +49,7 @@ devDependencies:
   prettier: 2.8.8
   typescript: 4.9.5
   unocss: 0.65.4_vite@4.5.14
-  vite: 4.5.14_@types+node@18.19.123
+  vite: 4.5.14_@types+node@18.19.127
   vite-tsconfig-paths: 4.3.2_2vr4gnqqrhu2zmpsya27ownkzq
 
 packages:
@@ -73,25 +73,25 @@ packages:
     resolution: {integrity: sha512-+562v9k4aI80m1+VuMHehNJWLOFjBnXn3tdOitzD0il5b7smkSBal4+a3oKiQTbrwMmN/TBUMDvbdoWDehgOww==}
     dev: true
 
-  /@emnapi/core/1.4.5:
-    resolution: {integrity: sha512-XsLw1dEOpkSX/WucdqUhPWP7hDxSvZiY+fsUC14h+FtQ2Ifni4znbBt8punRX+Uj2JG/uDb8nEHVKvrVlvdZ5Q==}
+  /@emnapi/core/1.5.0:
+    resolution: {integrity: sha512-sbP8GzB1WDzacS8fgNPpHlp6C9VZe+SJP3F90W9rLemaQj2PzIuTEl1qDOYQf58YIpyjViI24y9aPWCjEzY2cg==}
     requiresBuild: true
     dependencies:
-      '@emnapi/wasi-threads': 1.0.4
+      '@emnapi/wasi-threads': 1.1.0
       tslib: 2.8.1
     dev: true
     optional: true
 
-  /@emnapi/runtime/1.4.5:
-    resolution: {integrity: sha512-++LApOtY0pEEz1zrd9vy1/zXVaVJJ/EbAF3u0fXIzPJEDtnITsBGbbK0EkM72amhl/R5b+5xx0Y/QhcVOpuulg==}
+  /@emnapi/runtime/1.5.0:
+    resolution: {integrity: sha512-97/BJ3iXHww3djw6hYIfErCZFee7qCtrneuLa20UXFCOTCfBM2cvQHjWJ2EG0s0MtdNwInarqCTz35i4wWXHsQ==}
     requiresBuild: true
     dependencies:
       tslib: 2.8.1
     dev: true
     optional: true
 
-  /@emnapi/wasi-threads/1.0.4:
-    resolution: {integrity: sha512-PJR+bOmMOPH8AtcTGAyYNiuJ3/Fcoj2XN/gBEWzDIKh254XO+mM9XoXHk5GNEhodxeMznbg7BlRojVbKN+gC6g==}
+  /@emnapi/wasi-threads/1.1.0:
+    resolution: {integrity: sha512-WI0DdZ8xFSbgMjR1sFsKABJ/C5OnRrjT06JXbZKexJGrDuPTzZdDYfFlsgcCXCyf+suG5QU2e/y1Wo2V/OapLQ==}
     requiresBuild: true
     dependencies:
       tslib: 2.8.1
@@ -854,9 +854,9 @@ packages:
     resolution: {integrity: sha512-ZVWUcfwY4E/yPitQJl481FjFo3K22D6qF0DuFH6Y/nbnE11GY5uguDxZMGXPQ8WQ0128MXQD7TnfHyK4oWoIJQ==}
     requiresBuild: true
     dependencies:
-      '@emnapi/core': 1.4.5
-      '@emnapi/runtime': 1.4.5
-      '@tybys/wasm-util': 0.10.0
+      '@emnapi/core': 1.5.0
+      '@emnapi/runtime': 1.5.0
+      '@tybys/wasm-util': 0.10.1
     dev: true
     optional: true
 
@@ -1016,8 +1016,8 @@ packages:
       '@swc/core-win32-x64-msvc': 1.3.24
     dev: true
 
-  /@tybys/wasm-util/0.10.0:
-    resolution: {integrity: sha512-VyyPYFlOMNylG45GoAe0xDoLwWuowvf92F9kySqzYh8vmYm7D2u4iUJKa1tOUpS70Ku13ASrOkS4ScXFsTaCNQ==}
+  /@tybys/wasm-util/0.10.1:
+    resolution: {integrity: sha512-9tTaPJLSiejZKx+Bmog4uSubteqTvFrVrURwkmHixBo0G4seD0zUxp98E1DzUBJxLQ3NPwXrGKDiVjwx/DpPsg==}
     requiresBuild: true
     dependencies:
       tslib: 2.8.1
@@ -1036,8 +1036,8 @@ packages:
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
     dev: true
 
-  /@types/node/18.19.123:
-    resolution: {integrity: sha512-K7DIaHnh0mzVxreCR9qwgNxp3MH9dltPNIEddW9MYUlcKAzm+3grKNSTe2vCJHI1FaLpvpL5JGJrz1UZDKYvDg==}
+  /@types/node/18.19.127:
+    resolution: {integrity: sha512-gSjxjrnKXML/yo0BO099uPixMqfpJU0TKYjpfLU7TrtA2WWDki412Np/RSTPRil1saKBhvVVKzVx/p/6p94nVA==}
     dependencies:
       undici-types: 5.26.5
     dev: true
@@ -1210,7 +1210,7 @@ packages:
       '@unocss/core': 0.65.4
       '@unocss/reset': 0.65.4
       '@unocss/vite': 0.65.4_vite@4.5.14
-      vite: 4.5.14_@types+node@18.19.123
+      vite: 4.5.14_@types+node@18.19.127
     transitivePeerDependencies:
       - rollup
       - supports-color
@@ -1399,7 +1399,7 @@ packages:
       chokidar: 3.6.0
       magic-string: 0.30.17
       tinyglobby: 0.2.12
-      vite: 4.5.14_@types+node@18.19.123
+      vite: 4.5.14_@types+node@18.19.127
     transitivePeerDependencies:
       - rollup
       - supports-color
@@ -1550,7 +1550,7 @@ packages:
       vite: ^4
     dependencies:
       '@swc/core': 1.3.24
-      vite: 4.5.14_@types+node@18.19.123
+      vite: 4.5.14_@types+node@18.19.127
     dev: true
 
   /acorn-jsx/5.3.2_acorn@8.14.0:
@@ -4310,7 +4310,7 @@ packages:
       '@unocss/transformer-directives': 0.65.4
       '@unocss/transformer-variant-group': 0.65.4
       '@unocss/vite': 0.65.4_vite@4.5.14
-      vite: 4.5.14_@types+node@18.19.123
+      vite: 4.5.14_@types+node@18.19.127
     transitivePeerDependencies:
       - rollup
       - supports-color
@@ -4359,13 +4359,13 @@ packages:
       debug: 4.3.4
       globrex: 0.1.2
       tsconfck: 3.1.4_typescript@4.9.5
-      vite: 4.5.14_@types+node@18.19.123
+      vite: 4.5.14_@types+node@18.19.127
     transitivePeerDependencies:
       - supports-color
       - typescript
     dev: true
 
-  /vite/4.5.14_@types+node@18.19.123:
+  /vite/4.5.14_@types+node@18.19.127:
     resolution: {integrity: sha512-+v57oAaoYNnO3hIu5Z/tJRZjq5aHM2zDve9YZ8HngVHbhk66RStobhb1sqPMIPEleV6cNKYK4eGrAbE9Ulbl2g==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -4393,7 +4393,7 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 18.19.123
+      '@types/node': 18.19.127
       esbuild: 0.18.20
       postcss: 8.4.49
       rollup: 3.29.5
